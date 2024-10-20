@@ -1,12 +1,12 @@
 Hi there, this project is a simple react application for testing by jest framework and react testing library
 
-#Jest_Framework
+## Jest_Framework
 
 (1 Named file test for each component )
 
 \_in some dir for file component test or inside **tests** folder
 
-(2 describe And test case )
+## describe And test case )
 
 it() or test(): Defines an individual test case
 describe(): Groups related test cases
@@ -21,12 +21,12 @@ test('specific case', () => {
 });
 });
 
-(3 Only And Skip )
+## Only And Skip )
 
 \_only: Used run test only for specific file
 \_Skip: Used to run all tests never this test
 
-#(3 Types of test )
+## Types of test )
 
 1* **Unit Test** : Test a single unit of code a function, a method
 2* **Integration Test** : Test how multiple units of code work together
@@ -35,9 +35,9 @@ test('specific case', () => {
 
 ///////
 
-**Unit Test**
+## **Unit Test**
 
-Common Matchers
+## Common Matchers
 
 // Exact equality
 expect(value).toBe(2);
@@ -68,7 +68,7 @@ expect(array).toHaveLength(3);
 expect(obj).toHaveProperty('property');
 expect(obj).toMatchObject({partial: 'match'});
 
-Async Testing
+## Async Testing
 
 // Promises
 test('async test', () => {
@@ -77,7 +77,7 @@ expect(data).toBe('data');
 });
 });
 
-// Async/Await
+## // Async/Await
 test('async test', async () => {
 const data = await fetchData();
 expect(data).toBe('data');
@@ -109,7 +109,7 @@ afterEach(() => {
 // Runs after each test
 });
 
-Mocking:
+## Mocking:
 
 jest.fn(): Creates a mock function
 jest.mock(): Mocks a module
@@ -162,7 +162,7 @@ Jest has built-in code coverage reports. You can enable it by simply adding the 
 "coverageDirectory": "coverage", // directly root
 }
 
-#RTL (React Testing Library)
+## RTL (React Testing Library)
 
 React Testing Library (RTL) Guide for React Components
 Table of Contents
@@ -174,7 +174,7 @@ Common Patterns
 Examples
 Best Practices
 
-1. File Structure
+## File Structure
 
 Copysrc/
 ├── components/
@@ -188,7 +188,7 @@ Copysrc/
 └── **tests**/
 └── integration/
 
-2. Test Structure
+## Test Structure
 
 typescriptCopyimport { render, screen, fireEvent } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
@@ -212,7 +212,7 @@ test.skip('not ready test', () => {});
 // Run only this group
 describe.only('critical feature', () => {}); 3. Test Types
 
-1.  Unit Tests
+## Unit Tests
     typescriptCopy// Button.test.tsx
     describe('Button Component', () => {
     test('calls onClick when clicked', () => {
@@ -226,7 +226,7 @@ describe.only('critical feature', () => {}); 3. Test Types
 
     });
 
-2.  Integration Tests
+## Integration Tests
 
 typescriptCopy// Form.test.tsx
 describe('Form Integration', () => {
@@ -249,7 +249,7 @@ render(
 
 });
 
-3. E2E Tests (with RTL)
+## E2E Tests (with RTL)
 
 typescriptCopy// UserFlow.test.tsx
 describe('User Registration Flow', () => {
@@ -279,7 +279,7 @@ render(<RegistrationFlow />);
 
 });
 
-4. Common RTL Queries
+## Common RTL Queries
 
 Priority Order
 
